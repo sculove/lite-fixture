@@ -1,0 +1,23 @@
+{
+  "name": "lite-fixture",
+  "version": "1.0.0",
+  "description": "Lite test fixture",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sculove/lite-fixture.git"
+  },
+  "keywords": [
+    "test",
+    "fixture"
+  ],
+  "author": "sculove",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/sculove/lite-fixture/issues"
+  },
+  "homepage": "https://github.com/sculove/lite-fixture#readme"
+}
