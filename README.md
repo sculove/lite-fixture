@@ -7,7 +7,7 @@ npm install lite-fixture
 ```
 
 ## How to use
-The sandbox creates an element for testing.  
+The `sandbox` creates an element for testing.  
 you must call `cleanup` after test is completed
 
 ```js
