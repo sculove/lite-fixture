@@ -4,9 +4,9 @@ function sandbox(obj) {
 	tmp.id = "sandbox";
 	for(var p in obj) {
 		if(/class|className/.test(p)) {
-			tmp.setAttibute(p, obj[p] + " _tempSandbox_");
+			tmp.setAttribute(p, obj[p] + " _tempSandbox_");
 		} else {
-			tmp.setAttibute(p, obj[p]);
+			tmp.setAttribute(p, obj[p]);
 		}
 	}
 	return document.body.appendChild(tmp);
