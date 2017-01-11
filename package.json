@@ -1,6 +1,6 @@
 {
   "name": "lite-fixture",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Lite test fixture",
   "main": "index.js",
   "scripts": {
