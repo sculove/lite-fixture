@@ -11,8 +11,8 @@ The `sandbox` creates an element for testing.
 you must call `cleanup` after test is completed
 
 ```js
-sandbox(); // create element (id : sandbox)
-sandbox({
+var elSandbox = sandbox(); // create element (id : sandbox)
+var elTest = sandbox({
     id: "test",
     style: "display:none"
 }); // create element (id : test)
