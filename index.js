@@ -1,12 +1,20 @@
-function sandbox(obj) {
+function sandbox(obj, prop) {
 	var tmp = document.createElement("div");
 	tmp.className = "_tempSandbox_";
-	tmp.id = "sandbox";
-	for(var p in obj) {
-		if(/class|className/.test(p)) {
-			tmp.setAttribute(p, obj[p] + " _tempSandbox_");
-		} else {
-			tmp.setAttribute(p, obj[p]);
+	if (typeof obj === "string") {
+		tmp.id = obj;
+	} else {
+		tmp.id = "sandbox";
+	}
+	
+	if (typeof obj === "object" || typeof prop === "object") {
+		var attrs = typeof prop === "object" ? prop : obj;
+		for(var p in attrs) {
+			if(/class|className/.test(p)) {
+				tmp.setAttribute(p, attrs[p] + " _tempSandbox_");
+			} else {
+				tmp.setAttribute(p, attrs[p]);
+			}
 		}
 	}
 	return document.body.appendChild(tmp);
